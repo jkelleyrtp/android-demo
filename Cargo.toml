@@ -1,0 +1,8 @@
+[package]
+name = "androidfinal"
+version = "0.1.0"
+authors = ["Jonathan Kelley <jkelleyrtp@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+dioxus = { path = "../../../dioxus/packages/dioxus" }

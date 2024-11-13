@@ -1,0 +1,47 @@
+# uncomment the below configs to use the native linker instead
+
+# [target.aarch64-linux-android]
+# linker = "/Users/jonkelley/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android24-clang"
+# rustflags = [
+#     "-Clink-arg=-landroid",
+#     "-Clink-arg=-llog",
+#     "-Clink-arg=-lOpenSLES",
+#     "-Clink-arg=-Wl,--export-dynamic"
+# ]
+
+# [target.armv7-linux-androideabi]
+# linker = "/Users/jonkelley/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi24-clang"
+# rustflags = [
+#     "-Clink-arg=-landroid",
+#     "-Clink-arg=-llog",
+#     "-Clink-arg=-lOpenSLES",
+# ]
+
+# [target.i686-linux-android]
+# linker = "/Users/jonkelley/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/i686-linux-android24-clang"
+# rustflags = [
+#     "-Clink-arg=-landroid",
+#     "-Clink-arg=-llog",
+#     "-Clink-arg=-lOpenSLES",
+# ]
+
+# [target.x86_64-linux-android]
+# linker = "/Users/jonkelley/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android24-clang"
+# rustflags = [
+#     "-Clink-arg=-landroid",
+#     "-Clink-arg=-llog",
+#     "-Clink-arg=-lOpenSLES",
+# ]
+
+[profile]
+[profile.dioxus-wasm]
+inherits = "dev"
+opt-level = 2
+
+[profile.dioxus-server]
+inherits = "dev"
+opt-level = 2
+
+[profile.dioxus-android]
+inherits = "dev"
+opt-level = 1
